@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
         @Override
         protected Integer doInBackground(Integer... arg0) {
             StringBuilder output = new StringBuilder();
-            String KEY = "AIzaSyAntVsP46GIoX_EIHeU6CYAqgVHmOgH8fM";
+            String KEY = "Google Translate Open API Key";
             try {
                 // 번역문을 UTF-8으로 인코딩합니다.
                 String sourcetext = URLEncoder.encode(translationText.getText().toString(), "UTF-8");
