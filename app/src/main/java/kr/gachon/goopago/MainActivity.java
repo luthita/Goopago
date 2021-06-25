@@ -106,8 +106,8 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
         @Override
         protected Integer doInBackground(Integer... arg0) {
             StringBuilder output = new StringBuilder();
-            String clientId = "vuJK_b3Guf_elis1O5vj";
-            String clientSecret = "qZG7FNy2lF";
+            String clientId = "Client_Id";
+            String clientSecret = "Client_Key";
             try {
                 // 번역문을 UTF-8으로 인코딩합니다.
                 String text = URLEncoder.encode(translationText.getText().toString(), "UTF-8");
