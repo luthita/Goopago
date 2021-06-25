@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/country_unvisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/source_spinner"
+            android:layout_width="145dp"
+            android:layout_height="41dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="──▶"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/target_spinner"
+            android:layout_width="145dp"
+            android:layout_height="41dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/translationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="번역할 문장"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/micButton"
+            android:layout_width="16dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/micicon"
+            android:scaleType="centerInside"
+            android:text="마이크" />
+        <Button
+            android:id="@+id/translationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="번역하기" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_border"
+            android:hint="번역 결과(파파고)"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnPapagoTTS"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="듣기" />
+            <Button
+                android:id="@+id/btnPapagoShare"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="공유" />
+
+            <Button
+                android:id="@+id/papagoKeep"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="저장" />
+
+            <Button
+                android:id="@+id/papagoCopy"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="복사" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/resultText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_border"
+            android:hint="번역 결과(구글)"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnGoogleTTS"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="듣기" />
+            <Button
+                android:id="@+id/btnGoogleShare"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="공유" />
+
+            <Button
+                android:id="@+id/googleKeep"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="저장" />
+
+            <Button
+                android:id="@+id/googleCopy"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="복사" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/keepList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="저장 목록" />
+    </LinearLayout>
+
+
+</LinearLayout>
